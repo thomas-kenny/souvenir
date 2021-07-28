@@ -1,14 +1,27 @@
-<div class="navbar navbar-expand-sm navbar-lewagon">
+<nav>
+  <%= link_to root_path do %>
+    <%= image_tag "logo_transparent.png" %>
+  <% end %>
+  <div class="list">
+    <p class="fas fa-angle-right"></p></a>
+    <ul id="inner">
+     <li><%= link_to "Fashion", fashion_path, id: "fashion" %></li>
+     <li><%= link_to "Theatre", theatre_path, id: "theatre" %></li>
+     <li><%= link_to "About Us", about_path, id: "about" %></li>
+     <li><%= link_to "Contact", contact_path, id: "contact" %></li>
+    </ul>
+  </div>
+  <div class="socials">
+    <a href="https://www.instagram.com/souvenirscenicstudios/" target="_blank"><i class="fab fa-instagram nav-item"></i></a>
+    <a href="https://www.facebook.com/souvenirscenicstudiosltd/" target="_blank"><i class="fab fa-facebook nav-item"></i></a>
+  </div>
+</nav>
+
+<!-- Le Wagon Template -->
+
+<!-- <div class="navbar navbar-expand-sm navbar-lewagon">
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-        <!-- <li class="nav-item dropdown">
-          <%= image_tag "logo.jpg", class: "dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-          <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-            <%= link_to "Fashion", fashion_path, class: "dropdown-item" %>
-            <%= link_to "Theatre", theatre_path, class: "dropdown-item" %>
-            <%= link_to "Contact", contact_path, class: "dropdown-item" %>
-          </div>
-        </li> -->
+    <ul class="navbar-nav mr-auto" id="inner">
         <%= link_to root_path, class: "navbar-brand" do %>
          <%= image_tag "logo.jpg" %>
         <% end %>
@@ -26,14 +39,12 @@
         </li>
     </ul>
   </div>
-
-  <!-- <%= link_to 'Home', root_path, class: "navbar-brand" %> -->
   <div class="socials">
-    <a href="https://www.instagram.com/souvenirscenicstudios/" target="_blank"><i class="fab fa-instagram nav-link"></i></a>
-    <a href="https://www.facebook.com/souvenirscenicstudiosltd/" target="_blank"><i class="fab fa-facebook nav-link"></i></a>
+    <a href="https://www.instagram.com/souvenirscenicstudios/" target="_blank"><i class="fab fa-instagram nav-item"></i></a>
+    <a href="https://www.facebook.com/souvenirscenicstudiosltd/" target="_blank"><i class="fab fa-facebook nav-item"></i></a>
   </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-</div>
+</div> -->
