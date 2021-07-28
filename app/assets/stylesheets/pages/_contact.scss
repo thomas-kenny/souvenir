@@ -1,0 +1,46 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  background: transparent;
+  color: white;
+  font-size: 24px;
+  margin-top: 60px;
+  position: relative;
+  left: 50px;
+  padding: 20px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.address {
+  margin-top: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.9;
+}
+
+a:hover {
+  color: white;
+  opacity: 1;
+  // text-decoration: none;
+}
+
+.map {
+  margin-top: 60px;
+}
+
