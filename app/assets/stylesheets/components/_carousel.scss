@@ -1,20 +1,22 @@
-.carousel {
+.fashion-carousel {
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 120px;
+  // margin-top: 75px;
   // padding: 40px;
-  // border: 1px solid white;
 }
 
-// .carousel-inner .carousel-item img {
-//   height: 80%;
-//   object-fit:cover;
-// }
 
-// .carousel-item img {
-//     position: absolute;
-//     object-fit:cover;
-//     top: 0;
-//     left: 0;
-//     min-height: 500px;
-// }
+.carousel-item img {
+    object-fit:cover;
+    // height: 60%
+}
+
+.workshop-carousel {
+  border: 3px solid white;
+  margin: 20px;
+  // width: 50%;
+  // position: relative;
+}

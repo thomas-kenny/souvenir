@@ -1,6 +1,10 @@
 .fashion-container {
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.fashion {
+  background-image: none !important;
+  background-color: black !important;
 }

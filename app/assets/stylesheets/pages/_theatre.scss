@@ -1,6 +1,12 @@
 .theatre-container {
-  background-color: black;
+  // background-image: none !important;
+  // background-color: black !important;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.theatre {
+  background-image: none !important;
+  background-color: black !important;
 }
