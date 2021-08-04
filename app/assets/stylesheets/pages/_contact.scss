@@ -1,22 +1,30 @@
-.contact-container {
-  width: 80%;
-  margin: 0 auto;
+.contact {
+  width: 100%;
+  // margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .info {
   background: transparent;
   color: white;
-  font-size: 24px;
-  margin-top: 60px;
-  position: relative;
-  left: 50px;
+  font-size: 32px;
+  // margin-top: 60px;
+  // position: relative;
+  // left: 50px;
   padding: 20px;
   line-height: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 90%;
+  align-items: center;
+}
+
+.contact-info {
+  align-items: s;
 }
 
 .info h2 {
@@ -26,6 +34,9 @@
 
 .address {
   margin-top: 60px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
 }
 
 a {
@@ -42,5 +53,29 @@ a:hover {
 
 .map {
   margin-top: 60px;
+  width: 100%;
+  align-items: center;
+}
+
+.map-size {
+  width: 80%;
+}
+
+@media (min-width: 100px) and (max-width: 991px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map {
+    width: 80%;
+  }
+
+  .map-size {
+  // margin-top: 60px;
+  width: 100%;
+  align-items: center;
+}
+
 }
 
