@@ -148,7 +148,7 @@
     position: sticky;
     top: 0;
     z-index: 9;
-    width: 80%;
+    width: 100%;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -170,6 +170,7 @@
     width: 100%;
     // margin-right: 40px;
     margin: 0;
+    overflow: hidden;
   }
 
   .list {
@@ -214,6 +215,7 @@
     width: 100%;
     padding-left: 5px;
     padding-right: 5px;
+    overflow: hidden;
   }
 
   .fa-angle-right {
@@ -233,6 +235,8 @@
     width: 100%;
     // margin-right: 40px;
     margin: 0;
+    overflow: hidden;
+
   }
 
   .list {
@@ -255,6 +259,7 @@
 
   .socials {
     margin-top: 10px;
+    overflow: hidden;
     // margin-right: 20px;
   }
 
