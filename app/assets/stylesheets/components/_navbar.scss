@@ -192,8 +192,10 @@
   }
 
   .socials {
-    margin-top: 10px;
-    padding-right: 40px;
+    margin-top: 20px;
+    position: relative;
+    right: 15px;
+    width: 100%;
   }
 }
 
@@ -258,9 +260,10 @@
   }
 
   .socials {
-    margin-top: 10px;
-    overflow: hidden;
-    // margin-right: 20px;
+    margin-top: 20px;
+    position: relative;
+    right: 15px;
+    width: 100%;
   }
 
 }
