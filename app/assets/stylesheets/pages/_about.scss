@@ -11,10 +11,11 @@
 
 .content {
   // margin-top: 10px;
-  font-size: 16px;
+  font-size: 18px;
   width: 100%;
   margin-left: 20px;
   padding: 40px;
+  // background
 
 }
 
@@ -33,6 +34,9 @@
   .about {
     display: flex;
     flex-direction: column;
+  }
+  .content {
+    font-size: 14px;
   }
 
 }

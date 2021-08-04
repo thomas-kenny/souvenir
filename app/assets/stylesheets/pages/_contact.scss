@@ -59,6 +59,7 @@ a:hover {
 
 .map-size {
   width: 80%;
+  border: 2px solid white;
 }
 
 @media (min-width: 100px) and (max-width: 991px) {
@@ -75,6 +76,10 @@ a:hover {
   // margin-top: 60px;
   width: 100%;
   align-items: center;
+}
+
+.info {
+  font-size: 20px;
 }
 
 }
