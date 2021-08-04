@@ -136,7 +136,7 @@
 // Smallest device
 @media (min-width: 100px) and (max-width: 991px) {
   nav img {
-    width: 80px;
+    width: 70px;
   }
 
   nav {
@@ -144,7 +144,7 @@
     display: flex;
     justify-content: space-between;
     // align-items: center;
-    padding-left: 30px;
+    // padding-left: 30px;
     position: sticky;
     top: 0;
     z-index: 9;
@@ -165,19 +165,23 @@
     justify-content: space-between;
     text-decoration: none;
     width: 100%;
-    align-items: center;
-    margin-right: 20px;
+    margin-right: 40px;
   }
 
   .list {
-  position: relative;
-  border-top: none;
-  border-bottom: none;
+  // position: relative;
+  // border-top: none;
+  // border-bottom: none;
+  margin-top: 20px;
   width: 100%;
   height: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
+  }
+
+  .socials {
+    margin-top: 10px;
   }
 
 
