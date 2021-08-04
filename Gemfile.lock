@@ -86,7 +86,6 @@ GEM
     ffi (1.15.3)
     font-awesome-sass (5.15.1)
       sassc (>= 1.11)
-    geocoder (1.6.7)
     globalid (0.5.1)
       activesupport (>= 5.0)
     i18n (1.8.10)
@@ -227,7 +226,6 @@ DEPENDENCIES
   capybara (>= 2.15)
   dotenv-rails
   font-awesome-sass
-  geocoder
   jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
