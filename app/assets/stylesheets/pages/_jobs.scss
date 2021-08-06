@@ -53,3 +53,19 @@
 .panel-group .panel {
   margin-bottom: 30px;
 }
+
+@media (min-width: 100px) and (max-width: 991px) {
+  .jobs-container {
+  width: 100%;
+  }
+.panel-group {
+  width: 100%;
+  }
+  .description h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .panel-body p {
+    font-size: 14px;
+  }
+}
