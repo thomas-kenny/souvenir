@@ -1,9 +1,9 @@
 .contact {
   width: 100%;
-  // margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  margin: 0 auto;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-evenly;
   align-items: center;
 }
 
@@ -11,20 +11,13 @@
   background: transparent;
   color: white;
   font-size: 32px;
-  // margin-top: 60px;
-  // position: relative;
-  // left: 50px;
   padding: 20px;
   line-height: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
-  width: 90%;
   align-items: center;
-}
-
-.contact-info {
-  align-items: s;
+  text-align: center;
 }
 
 .info h2 {
@@ -33,16 +26,23 @@
 }
 
 .address {
-  margin-top: 60px;
-  width: 100%;
-  align-items: center;
+  margin-top: 20px;
+  // width: 100%;
   text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  // text-align: center;
 }
 
 a {
   text-decoration: none;
   color: white;
   opacity: 0.9;
+  padding: 5px;
 }
 
 a:hover {
@@ -52,29 +52,60 @@ a:hover {
 }
 
 .map {
-  margin-top: 60px;
-  width: 100%;
+  margin-top: 20px;
   align-items: center;
+  text-align: center;
 }
 
 .map-size {
-  width: 80%;
+  // width: 80%;
   border: 2px solid white;
+  justify-content: center;
 }
 
 .email {
   font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .phone {
   font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-button {
-  background: transparent;
-  opacity: 0.9;
+i {
+  padding: 8px;
 }
 
+
+
+// button {
+//   background: transparent;
+//   opacity: 0.9;
+//   position: relative;
+//   top: 20px;
+// }
+
+.button {
+  // width: 80%;
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  background: #8D2828;
+  opacity: 0.8;
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+.button:hover {
+  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(0px, 10px) scale(1.2);
+          transform: translate(0px, 10px) scale(1.2);
+}
 
 @media (min-width: 100px) and (max-width: 991px) {
   .contact {
@@ -94,6 +125,8 @@ button {
 
 .info {
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 }
