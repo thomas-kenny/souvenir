@@ -1,0 +1,55 @@
+.jobs-container {
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  h1 {
+    font-size: 40px;
+    margin: 40px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.description {
+  padding: 10px;
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.panel {
+  margin: 10px;
+}
+
+.panel-heading {
+  background-color: black;
+  opacity: 0.9;
+  border: none;
+}
+
+.panel-title {
+  height: 40px;
+  font-size: 28px;
+}
+
+.panel-body {
+  color: white;
+  font-size: 16px;
+  background-color: black;
+}
+.panel-group {
+  width: 100%;
+}
+
+.panel-group:hover {
+  cursor: pointer;
+}
+
+.panel-group .panel {
+  margin-bottom: 30px;
+}

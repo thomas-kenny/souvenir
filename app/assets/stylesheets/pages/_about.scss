@@ -1,4 +1,4 @@
-.about {
+  .about {
   width: 100%;
   display: flex;
   // grid-template-columns: 1fr 1fr;
@@ -28,6 +28,12 @@
   width: 100%;
   padding: 20px;
   margin-right: 20px;
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 100px) and (max-width: 991px) {
