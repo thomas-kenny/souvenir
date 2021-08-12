@@ -1,13 +1,22 @@
-.jobs-container {
+.jobs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 20px;
+}
+
+.job-panels {
+  // padding-right: 32px;
   height: 100%;
-  width: 50%;
-  margin: 0 auto;
+  width: 40%;
+  // margin: 0 auto;
   display: flex;
   flex-direction: column;
   // justify-content: space-between;
   h1 {
-    font-size: 40px;
-    margin: 40px;
+    font-size: 48px;
+    margin: 20px;
     font-weight: bold;
     padding: 10px;
     text-align: center;
@@ -17,11 +26,14 @@
 .description {
   padding: 10px;
   h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
   }
 }
 
+.caption {
+  padding: 10px;
+}
 .panel {
   margin: 10px;
 }
@@ -54,18 +66,39 @@
   margin-bottom: 30px;
 }
 
+.email {
+  font-size: 20px;
+}
+
+.olympic-tree {
+  text-align: center;
+}
+
+.newspaper {
+  width: 80%;
+  // padding: 20px;
+  margin-top: 20px;
+}
+
 @media (min-width: 100px) and (max-width: 991px) {
-  .jobs-container {
+  .jobs {
+    display: flex;
+    flex-direction: column;
+  }
+  .job-panels {
   width: 100%;
   }
 .panel-group {
   width: 100%;
   }
   .description h3 {
-    font-size: 16px;
-    text-align: center;
+    font-size: 18px;
+    // text-align: center;
   }
   .panel-body p {
     font-size: 14px;
   }
+  .email {
+  font-size: 18px;
+}
 }
