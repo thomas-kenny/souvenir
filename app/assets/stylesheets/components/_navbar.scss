@@ -173,7 +173,6 @@
     margin: 0;
     overflow: hidden;
     font-size: 12px;
-    font-weight: bold;
   }
 
   .list {
@@ -202,7 +201,10 @@
     position: relative;
     right: 40px;
     width: 50%;
-    font-size: 10px;
+    font-size: 12px;
+    a {
+      margin-left: -20px;
+    }
   }
 }
 
