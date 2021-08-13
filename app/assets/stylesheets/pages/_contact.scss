@@ -113,8 +113,25 @@ i {
     flex-direction: column;
   }
 
+  .address {
+    order: 1;
+    padding-bottom: 10px;
+  }
+
+  .contact-info {
+    order: 2;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  .button {
+    order: 3;
+    font-size: 18px;
+  }
+
   .map {
     width: 80%;
+    order: 4;
   }
 
   .map-size {
@@ -124,9 +141,21 @@ i {
 }
 
 .info {
-  font-size: 20px;
+  h2 {
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+  font-size: 18px;
   display: flex;
   flex-direction: column;
+}
+
+.phone {
+  font-size: 16px;
+}
+
+.email {
+  font-size: 16px;
 }
 
 }

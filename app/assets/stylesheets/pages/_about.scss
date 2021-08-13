@@ -43,6 +43,17 @@
   }
   .content {
     font-size: 14px;
+    order: 2;
+    padding: none;
+  }
+  .workshop {
+    order: 1;
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 12px;
+    }
   }
 
 }
