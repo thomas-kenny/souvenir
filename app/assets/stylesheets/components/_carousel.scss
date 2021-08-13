@@ -31,3 +31,15 @@
   // width: 50%;
   // position: relative;
 }
+
+@media (min-width: 100px) and (max-width: 991px) {
+  .carousel-item img {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 20%;
+}
+
+
+
+}
