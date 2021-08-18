@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'www.souvenir.co.uk'
+  root to: 'pages#home'
   get '/fashion', to: 'pages#fashion'
   get '/theatre', to: 'pages#theatre'
   get '/about', to: 'pages#about'
