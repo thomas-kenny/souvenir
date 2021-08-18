@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'pages#contact'
   get '/jobs', to: 'pages#jobs'
   constraints(host: 'https://souvenirscenicstudios.herokuapp.com/') do
-    get '/:param' => redirect("https://www.souvenir.co.uk/#{param}")
+    get '/:param' => redirect('https://www.souvenir.co.uk/:param')
 end
 end
 
