@@ -80,6 +80,15 @@
   margin-top: 20px;
 }
 
+.apply-button {
+  padding: 8px;
+  border-radius: 10px;
+  float: right;
+  margin: 5px;
+  width: 12%;
+  text-align: center;
+}
+
 @media (min-width: 100px) and (max-width: 991px) {
   .jobs {
     display: flex;
