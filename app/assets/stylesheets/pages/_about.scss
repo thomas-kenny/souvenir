@@ -37,6 +37,20 @@
 }
 
 @media (min-width: 100px) and (max-width: 991px) {
+  .ian-homepage {
+    text-align: center;
+    h1 {
+      font-size: 32px !important;
+    }
+    h2 {
+      font-size: 20px !important;
+    }
+    img {
+      width: 100% !important;
+      margin-bottom: 2rem;
+    }
+  }
+
   .about {
     display: flex;
     flex-direction: column;

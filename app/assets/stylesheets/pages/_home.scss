@@ -3,7 +3,8 @@ body, html {
   height: 100%;
   color: white;
   /* The image used */
-  background: url("https://res.cloudinary.com/dv1d9t9wu/image/upload/c_scale,w_1390/v1660909987/Souvenir/ian_homepage_qgu5rv.jpg");
+  // background: url("https://res.cloudinary.com/dv1d9t9wu/image/upload/c_scale,w_1390/v1660909987/Souvenir/ian_homepage_qgu5rv.jpg");  
+  background: black;
 
   /* Full height */
   height: 100%;
@@ -13,4 +14,18 @@ body, html {
   // background-repeat: repeat;
   background-size: cover;
   font-family: 'Open Sans', sans-serif;
+
+  .ian-homepage {
+    text-align: center;
+    h1 {
+      font-size: 54px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+    img {
+      width: 60%;
+      margin-bottom: 2rem;
+    }
+  }
 }
