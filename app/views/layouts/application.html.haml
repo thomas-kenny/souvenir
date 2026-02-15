@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title Souvenir Scenic Studios
+    %meta{name: "description", content: "London based scenery and propmakers for theatre, opera, ballet and fashion events."}
+    = csrf_meta_tags
+    = csp_meta_tag
+    %link{rel: "icon", href: "https://res.cloudinary.com/dv1d9t9wu/image/upload/v1629717601/Souvenir/favicon_t8wazb_altzvr.jpg"}
+    %link{href: "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", rel: "stylesheet", id: "bootstrap-css"}
+    %link{rel: "canonical", href: "https://www.souvenir.co.uk"}
+    %script{src: "//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
+    %script{src: "//code.jquery.com/jquery-1.11.1.min.js"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1, shrink-to-fit=no"}
+    = stylesheet_link_tag "tailwind", "data-turbo-track": "reload"
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true
+  %body
+    = render "shared/navbar"
+    = yield
