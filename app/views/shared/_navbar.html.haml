@@ -1,13 +1,11 @@
 %nav
   = link_to root_path do
     = image_tag "https://res.cloudinary.com/dv1d9t9wu/image/upload/v1629717674/Souvenir/logo_pbhmsf.jpg"
-  .list
-    %p.fas.fa-angle-right
-    %ul#inner
-      %li= link_to "Fashion", fashion_path, id: "fashion"
-      %li= link_to "Theatre", theatre_path, id: "theatre"
-      %li= link_to "About", about_path, id: "about"
-      %li= link_to "Contact", contact_path, id: "contact"
+  %ul#inner
+    %li= link_to "Fashion", fashion_path, id: "fashion"
+    %li= link_to "Theatre", theatre_path, id: "theatre"
+    %li= link_to "About", about_path, id: "about"
+    %li= link_to "Contact", contact_path, id: "contact"
   .socials
     %a{href: "https://www.instagram.com/souvenirscenicstudios/", target: "_blank"}
       %i.fab.fa-instagram.nav-item

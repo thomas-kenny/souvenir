@@ -6,19 +6,25 @@
 }
 
 .swiper-slide {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  transform: scale(0.85);
+  transition: opacity 0.3s ease;
   opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 120px);
 
   img {
-    width: 100%;
+    max-width: 100%;
+    max-height: calc(100% - 50px);
+    width: auto;
     height: auto;
     display: block;
+    object-fit: contain;
   }
 }
 
 .swiper-slide-active {
-  transform: scale(1);
   opacity: 1;
 }
 
@@ -45,13 +51,51 @@
   }
 }
 
+@media (max-width: 575px) {
+  .swiper-slide {
+    height: calc(100vh - 80px);
+
+    img {
+      max-height: calc(100% - 40px);
+    }
+  }
+
+  .slide-caption {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    &::after {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .swiper-slide {
+    height: calc(100vh - 90px);
+  }
+
+  .slide-caption {
+    font-size: 16px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    &::after {
+      font-size: 20px;
+    }
+  }
+}
+
 // About page workshop carousel (unchanged)
 .workshop-carousel {
   border: 3px solid white;
   margin: 20px;
 }
 
-// About page still uses Bootstrap carousel
 .workshop-carousel .carousel-item img {
   margin: 0 auto;
   position: relative;

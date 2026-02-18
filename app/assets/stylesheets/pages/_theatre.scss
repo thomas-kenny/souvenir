@@ -9,3 +9,15 @@
   justify-content: center;
   height: calc(100vh - 80px);
 }
+
+@media (max-width: 575px) {
+  .theatre-container {
+    height: calc(100vh - 60px);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .theatre-container {
+    height: calc(100vh - 70px);
+  }
+}
