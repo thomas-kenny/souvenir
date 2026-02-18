@@ -1,42 +1,73 @@
-.fashion-carousel {
-  position: relative;
-  top: 20px;
-  width: 100%;
-  height: 50%;
+.show-carousel {
+  width: 95vw;
+  max-width: 1800px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
+.swiper-slide {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(0.85);
+  opacity: 0.5;
 
-.carousel-item img {
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.slide-caption {
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  padding: 12px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  .swiper-slide-active & {
+    opacity: 1;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+
+  &::after {
+    font-size: 24px;
+  }
+}
+
+// About page workshop carousel (unchanged)
+.workshop-carousel {
+  border: 3px solid white;
+  margin: 20px;
+}
+
+// About page still uses Bootstrap carousel
+.workshop-carousel .carousel-item img {
   margin: 0 auto;
   position: relative;
   width: 75%;
   height: 20%;
 }
 
-.carousel-item {
+.workshop-carousel .carousel-item {
   height: 50%;
 }
 
-// .carousel-item img {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     min-height: 300px;
-// }
-
-.workshop-carousel {
-  border: 3px solid white;
-  margin: 20px;
-  // width: 50%;
-  // position: relative;
-}
-
 @media (min-width: 100px) and (max-width: 991px) {
-  .carousel-item img {
-  margin: 0 auto;
-  position: relative;
-  width: 90%;
-  height: 20%;
+  .workshop-carousel .carousel-item img {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height: 20%;
   }
 }

@@ -1,14 +1,11 @@
+.fashion {
+  background-color: black;
+  overflow: hidden;
+}
+
 .fashion-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: none !important;
-  background-color: black !important;
-}
-
-.fashion {
-  background-image: none !important;
-  background-color: black !important;
-  // width: 100% !important;
-  // height: 100% !important;
+  height: calc(100vh - 80px);
 }

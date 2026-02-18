@@ -3,9 +3,11 @@ class PagesController < ApplicationController
   end
 
   def fashion
+    @shows = Show.fashion.ordered
   end
 
   def theatre
+    @shows = Show.theatre.ordered
   end
 
   def about
