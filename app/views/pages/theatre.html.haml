@@ -4,8 +4,18 @@
   .theatre-container
     .show-carousel.swiper
       .swiper-wrapper
-        - @shows.each do |show|
+        - @shows.each_with_index do |show, index|
           .swiper-slide
-            = image_tag show.image_url, alt: 'Show image'
+            - optimized_url = optimized_cloudinary_url(show.image_url)
+            - responsive_srcset = cloudinary_srcset(show.image_url)
+            - image_attrs = { alt: 'Show image', decoding: 'async' }
+            - image_attrs[:srcset] = responsive_srcset if responsive_srcset.present?
+            - image_attrs[:sizes] = '(max-width: 575px) 95vw, (max-width: 991px) 95vw, 95vw'
+            - if index.zero?
+              - image_attrs[:loading] = 'eager'
+              - image_attrs[:fetchpriority] = 'high'
+            - else
+              - image_attrs[:loading] = 'lazy'
+            = image_tag optimized_url, **image_attrs
       .swiper-button-prev
       .swiper-button-next

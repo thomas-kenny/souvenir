@@ -7,6 +7,10 @@ const initCarousel = () => {
     centeredSlides: true,
     spaceBetween: 10,
     loop: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
