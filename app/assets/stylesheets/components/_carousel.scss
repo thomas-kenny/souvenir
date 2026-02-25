@@ -28,20 +28,6 @@
   opacity: 1;
 }
 
-.slide-caption {
-  color: white;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  padding: 12px 0;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-
-  .swiper-slide-active & {
-    opacity: 1;
-  }
-}
-
 .swiper-button-prev,
 .swiper-button-next {
   color: white;
@@ -56,13 +42,8 @@
     height: calc(100vh - 80px);
 
     img {
-      max-height: calc(100% - 40px);
+      max-height: 100%;
     }
-  }
-
-  .slide-caption {
-    font-size: 14px;
-    padding: 8px 0;
   }
 
   .swiper-button-prev,
@@ -76,10 +57,6 @@
 @media (min-width: 576px) and (max-width: 991px) {
   .swiper-slide {
     height: calc(100vh - 90px);
-  }
-
-  .slide-caption {
-    font-size: 16px;
   }
 
   .swiper-button-prev,

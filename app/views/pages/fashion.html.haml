@@ -6,7 +6,6 @@
       .swiper-wrapper
         - @shows.each do |show|
           .swiper-slide
-            = image_tag show.image_url, alt: show.name
-            .slide-caption= show.name
+            = image_tag show.image_url, alt: 'Show image'
       .swiper-button-prev
       .swiper-button-next
